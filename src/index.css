@@ -1,13 +1,91 @@
+/********************************************/
+/****           Defining Global          ****/
+/****                Styles              ****/
+/********************************************/
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Using BEM for better css standardization and maintainability */
+.body {
+  min-height: 100vh;
+  background-color: rgba(35, 35, 35, 0.9);
+}
+
+/* Using px (instead of rem) considering it is the unity displayed at the style guide */
+.header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header__img {
+  width: 100px;
+  height: 100px;
+}
+
+/*** defining positioning in terms of mobile first ***/
+.main {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-left {
+  width: 80%;
+  margin: auto;
+}
+
+.section-right {
+  width: 80%;
+  margin: auto;
+}
+
+/* defining media queries for devices from sm to lg dimensions */
+@media only screen and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .section-left {
+    width: 55%;
+    margin: 10px;
+  }
+
+  .section-right {
+    width: 35%;
+    margin: 10px;
+  }
 }
