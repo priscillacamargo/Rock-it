@@ -9,7 +9,7 @@ import TriangleRight from 'baseui/icon/triangle-right';
 
 import { useApiState } from '../../helpers/apiContext';
 
-/* TODO: Add Button states and loading states */
+/* TODO: Add button and loading states */
 const PlaylistManager = () => {
   const [listName, setListName] = React.useState('');
   const [playlists, setPlaylists] = React.useState([]);

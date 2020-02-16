@@ -16,10 +16,10 @@ const ArtistsPage = ({ match }) => {
   return (
     <div className="body">
       <Card className="artist-page__card--margin">
-        <h3>Artist: {artistName && artistName}</h3>
+        <h4>Artist: {artistName && artistName}</h4>
       </Card>
       <Card className="artist-page__card">
-        <h3>Your {artistName && artistName} Songs:</h3>
+        <h4>Your {artistName && artistName} Songs:</h4>
         {artistSongs &&
           artistSongs.map(song => (
             <ListItem key={song.id}>
