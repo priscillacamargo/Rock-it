@@ -81,11 +81,24 @@ code {
 
   .section-left {
     width: 55%;
-    margin: 10px;
+    padding: 10px;
   }
 
   .section-right {
     width: 35%;
     margin: 10px;
+  }
+
+  .section__list {
+    height: 500px;
+    overflow-y: scroll;
+  }
+
+  .section__icon--margin {
+    margin-right: -10px;
+  }
+
+  .section__search {
+    padding: 20px 30px 0px 30px;
   }
 }
