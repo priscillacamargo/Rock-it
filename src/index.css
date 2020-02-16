@@ -31,6 +31,14 @@ p {
   font-size: 16px;
 }
 
+a,
+a:hover,
+a:visited,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -72,6 +80,39 @@ code {
   margin: auto;
 }
 
+.section__list {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.section__icon--margin {
+  margin-right: -10px;
+}
+
+.section__search {
+  padding: 20px 10px 0px 10px;
+}
+
+.artist-page__card {
+  width: 80%;
+  margin: 30px auto auto auto;
+}
+
+.artist-page__card--margin {
+  width: 80%;
+  margin: auto;
+}
+
+.playlist-section {
+  margin-bottom: 30px;
+}
+
+.playlist-section__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
 /* defining media queries for devices from sm to lg dimensions */
 @media only screen and (min-width: 768px) {
   .main {
@@ -87,15 +128,6 @@ code {
   .section-right {
     width: 35%;
     margin: 10px;
-  }
-
-  .section__list {
-    height: 500px;
-    overflow-y: scroll;
-  }
-
-  .section__icon--margin {
-    margin-right: -10px;
   }
 
   .section__search {

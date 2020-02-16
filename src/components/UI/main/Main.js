@@ -2,8 +2,8 @@ import React from 'react';
 import { Card } from 'baseui/card';
 
 import Header from '../header/Header';
-import SearchComponent from '../search/Search';
-import ArtistsLists from '../artists/ArtistsList';
+import SearchableList from '../search/Search';
+import PlaylistManager from '../../UI/playlists/Playlist';
 
 import { useApiState } from '../../helpers/apiContext';
 
@@ -18,15 +18,16 @@ const Main = () => {
           <h4>Your Artists</h4>
           <Card className="section__search">
             <div>
-              <SearchComponent list={artists} />
+              <SearchableList list={artists} />
             </div>
           </Card>
         </div>
         <div className="section-right">
           <h4>Your Playlists</h4>
-          <ArtistsLists></ArtistsLists>
+          <Card className="section__search">
+            <PlaylistManager />
+          </Card>
         </div>
-        .0
       </div>
     </div>
   );

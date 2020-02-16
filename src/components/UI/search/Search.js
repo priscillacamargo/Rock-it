@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import { useStyletron } from 'baseui';
 import { ListItem, ListItemLabel } from 'baseui/list';
 import { Input } from 'baseui/input';
 import TriangleRight from 'baseui/icon/triangle-right';
 import Search from 'baseui/icon/search';
 
-const SearchComponent = props => {
+const SearchableList = props => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -47,28 +49,29 @@ const SearchComponent = props => {
       />
       <div className="section__list">
         {items.map(item => (
-          <ListItem
-            key={item.id}
-            overrides={{
-              Root: {
-                style: {
-                  borderBottom: '1px solid #E2E2E2'
+          <Link key={item.id} to={`/artists/${item.id}`}>
+            <ListItem
+              overrides={{
+                Root: {
+                  style: {
+                    borderBottom: '1px solid #E2E2E2'
+                  }
                 }
-              }
-            }}
-          >
-            <ListItemLabel>
-              <strong>{item.name}</strong>
-            </ListItemLabel>
-            <div>
-              <TriangleRight className="section__icon--margin" />
-              <TriangleRight />
-            </div>
-          </ListItem>
+              }}
+            >
+              <ListItemLabel>
+                <strong>{item.name}</strong>
+              </ListItemLabel>
+              <div>
+                <TriangleRight className="section__icon--margin" />
+                <TriangleRight />
+              </div>
+            </ListItem>
+          </Link>
         ))}
       </div>
     </div>
   );
 };
 
-export default SearchComponent;
+export default SearchableList;
