@@ -1,5 +1,4 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-In this way way we have an standardazed and optimized build of the app/
 
 ## Available Scripts
 
@@ -42,9 +41,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Contributing
 
-For a smooth maintenance of the code base we use pre-commit hooks (through [husky](https://github.com/typicode/husky)) which check for [eslint](https://eslint.org/)linting errors and format the code with [prettier](https://prettier.io/). Please make sure your code respect the eslint rules otherwise you will not be able to commit.
+For a smooth maintenance of the code base we use pre-commit hooks (through [husky](https://github.com/typicode/husky)) which check for [eslint](https://eslint.org/) errors and format the code with [prettier](https://prettier.io/). Please make sure your code respect the eslint rules otherwise you will not be able to commit.
 
-In case you want to set in your editor the same rules used in this project for formatting (Really recommended!!!!) here are the specs for your .prettierrc.js file
+In case you want to set in your editor the same rules used in this project regarding formatting (Really recommended!!!!) here are the specs for your .prettierrc.js file
 
 ```
 module.exports = {
@@ -58,8 +57,8 @@ module.exports = {
 
 ## Styles
 
-For speed up the process the [Base Web](https://baseweb.design/) compoenent library was used and adapted according to the company's styleguide
-For globals settings were defined at the index.css
+For speed up the process the [Base Web](https://baseweb.design/) compoenent library was used and adapted according to the company's styleguide.
+Globals settings were defined at the index.css.
 The BEM methodology was used.
 
 ### Happy Coding (ﾉ ◕ ヮ ◕)ﾉ\*:・ﾟ ✧
