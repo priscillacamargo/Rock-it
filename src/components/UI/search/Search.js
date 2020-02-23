@@ -38,7 +38,7 @@ const SearchableList = props => {
   }
 
   return (
-    <div>
+    <div id="search">
       <Input
         type="text"
         placeholder={props.placeholder}

@@ -13,5 +13,5 @@ it('renders correctly the Header title', () => {
 
 it('renders correctly Header logo', () => {
   const wrapper = render(<Header />);
-  expect(expect(wrapper.find('img').prop('src')).toEqual(logoImage));
+  expect(wrapper.find('img').prop('src')).toEqual(logoImage);
 });
